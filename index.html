@@ -27,6 +27,7 @@
                 reader = new FileReader();
             reader.readAsDataURL(file);
             reader.onload = function (e) {
+                console.log(e.target.result)
                 $d.setAttribute("src", e.target.result);
             };
         };
